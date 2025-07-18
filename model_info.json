@@ -1,0 +1,89 @@
+{
+  "models": [
+    {
+      "name": "aya:latest",
+      "model": "aya:latest",
+      "modified_at": "2025-07-18T17:43:48.187184+05:00",
+      "size": 4797474023,
+      "digest": "7ef8c4942023233f441474200440ada6cb37ca276e52861e0fe8dd7aea570224",
+      "details": {
+        "parent_model": "",
+        "format": "gguf",
+        "family": "command-r",
+        "families": [
+          "command-r"
+        ],
+        "parameter_size": "8.0B",
+        "quantization_level": "F16"
+      }
+    },
+    {
+      "name": "wizardlm2:latest",
+      "model": "wizardlm2:latest",
+      "modified_at": "2025-07-18T17:11:28.3190382+05:00",
+      "size": 4108928625,
+      "digest": "c9b1aff820f245a43b1719b296ce7131746073691cbb56f7a8d88a4713a3df79",
+      "details": {
+        "parent_model": "",
+        "format": "gguf",
+        "family": "llama",
+        "families": [
+          "llama"
+        ],
+        "parameter_size": "7B",
+        "quantization_level": "Q4_0"
+      }
+    },
+    {
+      "name": "nomic-embed-text:latest",
+      "model": "nomic-embed-text:latest",
+      "modified_at": "2025-07-18T16:39:25.3904709+05:00",
+      "size": 274302450,
+      "digest": "0a109f422b47e3a30ba2b10eca18548e944e8a23073ee3f3e947efcf3c45e59f",
+      "details": {
+        "parent_model": "",
+        "format": "gguf",
+        "family": "nomic-bert",
+        "families": [
+          "nomic-bert"
+        ],
+        "parameter_size": "137M",
+        "quantization_level": "F16"
+      }
+    },
+    {
+      "name": "mistral:latest",
+      "model": "mistral:latest",
+      "modified_at": "2025-07-05T23:16:11.6518185+05:00",
+      "size": 4113301822,
+      "digest": "3944fe81ec14610e0852c3d915768ee8d507ea541387fdfcbbf9edaa0c757734",
+      "details": {
+        "parent_model": "",
+        "format": "gguf",
+        "family": "llama",
+        "families": [
+          "llama"
+        ],
+        "parameter_size": "7.2B",
+        "quantization_level": "Q4_0"
+      }
+    },
+    {
+      "name": "llama3:latest",
+      "model": "llama3:latest",
+      "modified_at": "2025-07-04T21:43:08.6958383+05:00",
+      "size": 4661224676,
+      "digest": "365c0bd3c000a25d28ddbf732fe1c6add414de7275464c4e4d1c3b5fcb5d8ad1",
+      "details": {
+        "parent_model": "",
+        "format": "gguf",
+        "family": "llama",
+        "families": [
+          "llama"
+        ],
+        "parameter_size": "8.0B",
+        "quantization_level": "Q4_0"
+      }
+    }
+  ]
+}
