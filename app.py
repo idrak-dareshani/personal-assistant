@@ -3,7 +3,7 @@ import os
 import time
 import requests
 import streamlit as st
-from rag_utils import list_ollama_models, get_model_info
+from utils import list_ollama_models, get_model_info
 from rag_utils import load_documents, create_vectorstore
 from langchain.prompts import PromptTemplate
 from langchain.chains import RetrievalQA
@@ -33,16 +33,17 @@ st.title("🧠 Personal ChatGPT - RAG + Multi-model")
 if "chat_memory" not in st.session_state:
     st.session_state.chat_memory = []
 
-if "vs" not in st.session_state:
-    st.session_state.vs = None
+if "vectorstore" not in st.session_state:
+    st.session_state.vectorstore = None
 
 with st.sidebar:
     available_models = list_ollama_models()
     # Sidebar: Model selection and clean metadata
     st.sidebar.markdown("### 🤖 Model Selection")
     selected_model = st.sidebar.selectbox("Choose a model", available_models)
+    update_button = st.sidebar.button("Update Model")
 
-    if selected_model:
+    if update_button:
         model_info = get_model_info(selected_model)
         with st.sidebar.expander("ℹ️ Model Summary", expanded=False):
             st.markdown(f"**Name**: {model_info['name']}")
